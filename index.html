@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <title>Document</title>
+    <script src="index.js"></script>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
+</head>
+<body>
+    <div class="container-fluid shadow p-3 mb-5 bg-white">
+        <div class="row">
+            <div class="col-lg-6">
+                <!-- login icon -->
+                <img src="icons8-user-64.png" class="img1">
+                <h1>Inscriver-vous</h1>
+                <label>Creez un compte gratuit sur Futur Digitale</label>
+                <br/><br/> 
+                <!-- FullName input -->
+                <div class="form_div">
+                    <input type="text" placeholder="John nash" class="form_input" id="FullName" required>
+                    <label class="form_label">Nom complet</label>
+                </div>
+                <!-- Adresse e-mail input -->
+                <div class="form_div">
+                    <input type="text" placeholder=" " id="AdresseMail" class="form_input" required>
+                    <label class="form_label">Adresse e-mail</label>
+                </div>
+                <!-- Mot de passe input -->
+                <div class="form_div">
+                    <input placeholder=" " id="Password" type="password" class="form_input" onblur="CheckPassword()" required/>
+                    <label class="form_label">Mot de passe</label>
+                    <i class="far fa-eye-slash" id="hide1" onclick="ShowHidePassword1()"></i>
+                    <i class="far fa-eye" id="show1" onclick="ShowHidePassword1()"></i>
+                    <br/><br/>
+                    <label id="label"></label>
+                </div>         
+                <br/>       
+                <!-- Confirmation du mot de passe input -->
+                <div class="form_div">
+                    <input type="password" placeholder=" " id="ConfirmationPassword" class="form_input" onblur="ComparePassword()" required>
+                    <label class="form_label">Confirmer le mot de passe</label>
+                    <i class="far fa-eye-slash" id="hide2" onclick="ShowHidePassword2()"></i>
+                    <i class="far fa-eye" id="show2" onclick="ShowHidePassword2()"></i> 
+                </div>
+                <!-- condition generale -->
+                <div>
+                    <input type="checkbox" id="checkbox1">
+                    <label>J'ai accepte les <a href="#" class="text-danger">condition generales</a></label>
+                </div>
+                <!-- s'inscrire button -->
+                <input type="button" value="S'INSCRIRE" class="btn btn-danger text-white  form-control pwd" id="button" onclick="F3()">  
+            </div>
+            <div class="col-lg-6 ">
+                <img src="Image 1.png" class="img2">
+            </div>
+        </div>
+    </div>
+</body>
+</html>

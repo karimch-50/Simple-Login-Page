@@ -1,0 +1,108 @@
+.container-fluid{
+    margin-top: 50px;
+    width: 1082px;
+    height: 634px;
+    border-radius:.6rem;
+} 
+
+.col-lg-6{
+    width: 473px;
+    height: 634px;
+    float: left; 
+    margin-top: -50px;
+} 
+
+.img1{
+    position: relative;
+    top:-5px;
+    height: 80px;
+    width: 80px;
+}
+
+.img2{
+    margin-top: 34px;
+    height: 634px;
+    width: 592px;
+    border-top-right-radius:.6rem;
+    border-bottom-right-radius:.6rem;
+}
+
+.form_div{
+    position: relative;
+    height: 48px;
+    margin-bottom: 1.5rem;
+}
+
+/* defaule style before doing any thing to our inputs */
+.form_input{
+    position: absolute;
+    border: 2px solid #DADCE0 ;
+    border-radius:.2rem;
+    outline: none;
+    padding: 16px;
+    background: none;
+    font-size: 16px;
+    z-index:1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* border blue color while hovering above the input */
+.form_input:hover{
+    border: 2px solid #2367e6;
+}
+
+.form_label{
+    position: absolute;
+    left:16px;
+    top:10px;
+    padding:2px;
+    background-color: #fff;
+    transition: .3s;
+    color: #80868B;
+    font-size: 1rem;
+}
+
+/* input focus move up */
+.form_input:focus + .form_label{
+    top:-.7rem;
+    left:.8rem;
+    color: #ff5160;
+    font-size: .75rem;
+    font-weight:500;
+    z-index: 10;
+}
+
+/* hide placeholder wile focus stop */
+.form_input:not(:focus)::placeholder {
+    color: transparent;
+}
+
+
+.form_input:not(:placeholder-shown).form_input:not(:focus)+ .form_label{
+    top:-.7rem;
+    left:.8rem;
+    font-size: .75rem;
+    font-weight:500;
+    z-index: 10;
+}
+
+.form_input:focus{
+    border: 2px solid #ff5160;
+}
+
+/* display the icon of show and hide password */
+i{
+    margin:10px 10px;
+    font-size:25px;
+    position: relative;
+    z-index: 2; 
+    float: right;
+}
+
+#hide1, #hide2{
+    display: none;
+}
+
